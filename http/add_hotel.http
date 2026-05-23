@@ -1,0 +1,337 @@
+### Create Royal Garden Hotel
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Royal Garden Hotel",
+  "description": "Elegant hotel with botanical gardens and luxury suites.",
+  "address": "12 Queen Street",
+  "city": "London",
+  "country": "UK",
+  "rating": 5,
+  "check_in_time": "15:00:00",
+  "check_out_time": "11:00:00"
+}
+
+###
+
+### Create Baltic Sea Resort
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Baltic Sea Resort",
+  "description": "Relaxing seaside resort with spa and wellness center.",
+  "address": "45 Harbor Road",
+  "city": "Gdansk",
+  "country": "Poland",
+  "rating": 4,
+  "check_in_time": "14:00:00",
+  "check_out_time": "11:00:00"
+}
+
+###
+
+### Create Alpine Crown Lodge
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Alpine Crown Lodge",
+  "description": "Rustic alpine lodge near ski slopes and hiking trails.",
+  "address": "88 Glacier Way",
+  "city": "Zermatt",
+  "country": "Switzerland",
+  "rating": 5,
+  "check_in_time": "16:00:00",
+  "check_out_time": "10:00:00"
+}
+
+###
+
+### Create Riverside Suites
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Riverside Suites",
+  "description": "Comfortable riverside hotel with modern apartments.",
+  "address": "77 River Lane",
+  "city": "Prague",
+  "country": "Czech Republic",
+  "rating": 4,
+  "check_in_time": "14:00:00",
+  "check_out_time": "12:00:00"
+}
+
+###
+
+### Create Emerald Bay Resort
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Emerald Bay Resort",
+  "description": "Tropical beachfront resort with private villas.",
+  "address": "19 Coconut Drive",
+  "city": "Phuket",
+  "country": "Thailand",
+  "rating": 5,
+  "check_in_time": "15:00:00",
+  "check_out_time": "12:00:00"
+}
+
+###
+
+### Create City Central Inn
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "City Central Inn",
+  "description": "Affordable downtown hotel for business travelers.",
+  "address": "101 Main Avenue",
+  "city": "Berlin",
+  "country": "Germany",
+  "rating": 3,
+  "check_in_time": "13:00:00",
+  "check_out_time": "11:00:00"
+}
+
+###
+
+### Create Golden Palace Hotel
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Golden Palace Hotel",
+  "description": "Luxury palace-inspired hotel with fine dining.",
+  "address": "500 Royal Boulevard",
+  "city": "Istanbul",
+  "country": "Turkey",
+  "rating": 5,
+  "check_in_time": "15:00:00",
+  "check_out_time": "12:00:00"
+}
+
+###
+
+### Create Fjord Breeze Hotel
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Fjord Breeze Hotel",
+  "description": "Scandinavian hotel with beautiful fjord views.",
+  "address": "33 Harbor Street",
+  "city": "Bergen",
+  "country": "Norway",
+  "rating": 4,
+  "check_in_time": "14:00:00",
+  "check_out_time": "10:30:00"
+}
+
+###
+
+### Create Sakura Stay
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Sakura Stay",
+  "description": "Minimalist Japanese hotel near cultural attractions.",
+  "address": "8 Sakura Road",
+  "city": "Kyoto",
+  "country": "Japan",
+  "rating": 4,
+  "check_in_time": "15:00:00",
+  "check_out_time": "11:00:00"
+}
+
+###
+
+### Create Mediterranean Pearl Resort
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Mediterranean Pearl Resort",
+  "description": "Luxury Mediterranean retreat with infinity pools.",
+  "address": "66 Coastline Avenue",
+  "city": "Santorini",
+  "country": "Greece",
+  "rating": 5,
+  "check_in_time": "15:00:00",
+  "check_out_time": "11:00:00"
+}
+
+###
+
+### Create Skyline Business Hotel
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Skyline Business Hotel",
+  "description": "Modern skyscraper hotel with executive lounges.",
+  "address": "900 Commerce Plaza",
+  "city": "Singapore",
+  "country": "Singapore",
+  "rating": 4,
+  "check_in_time": "13:00:00",
+  "check_out_time": "11:00:00"
+}
+
+###
+
+### Create Canyon Ridge Motel
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Canyon Ridge Motel",
+  "description": "Budget motel near national parks and hiking routes.",
+  "address": "12 Desert Road",
+  "city": "Phoenix",
+  "country": "USA",
+  "rating": 2,
+  "check_in_time": "14:00:00",
+  "check_out_time": "10:00:00"
+}
+
+###
+
+### Create Ocean Breeze Suites
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Ocean Breeze Suites",
+  "description": "Stylish suites with direct beach access.",
+  "address": "81 Coral Beach",
+  "city": "Miami",
+  "country": "USA",
+  "rating": 4,
+  "check_in_time": "15:00:00",
+  "check_out_time": "11:00:00"
+}
+
+###
+
+### Create Heritage Castle Hotel
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Heritage Castle Hotel",
+  "description": "Historic castle hotel with medieval interiors.",
+  "address": "1 Castle Hill",
+  "city": "Edinburgh",
+  "country": "Scotland",
+  "rating": 5,
+  "check_in_time": "16:00:00",
+  "check_out_time": "11:00:00"
+}
+
+###
+
+### Create Rainforest Eco Lodge
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Rainforest Eco Lodge",
+  "description": "Eco-friendly jungle retreat with guided tours.",
+  "address": "23 Green Valley",
+  "city": "Manaus",
+  "country": "Brazil",
+  "rating": 4,
+  "check_in_time": "14:00:00",
+  "check_out_time": "10:00:00"
+}
+
+###
+
+### Create Crystal Lake Hotel
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Crystal Lake Hotel",
+  "description": "Peaceful lakeside hotel with canoe rentals.",
+  "address": "90 Lakeview Road",
+  "city": "Geneva",
+  "country": "Switzerland",
+  "rating": 4,
+  "check_in_time": "14:00:00",
+  "check_out_time": "11:00:00"
+}
+
+###
+
+### Create Aurora Sky Resort
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Aurora Sky Resort",
+  "description": "Northern lights viewing resort with glass igloos.",
+  "address": "44 Arctic Circle",
+  "city": "Rovaniemi",
+  "country": "Finland",
+  "rating": 5,
+  "check_in_time": "15:00:00",
+  "check_out_time": "10:00:00"
+}
+
+###
+
+### Create Venice Canal Hotel
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Venice Canal Hotel",
+  "description": "Boutique hotel overlooking historic canals.",
+  "address": "15 Canal Grande",
+  "city": "Venice",
+  "country": "Italy",
+  "rating": 4,
+  "check_in_time": "14:00:00",
+  "check_out_time": "11:00:00"
+}
+
+###
+
+### Create Maple Leaf Inn
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Maple Leaf Inn",
+  "description": "Warm and cozy inn with Canadian charm.",
+  "address": "52 Forest Avenue",
+  "city": "Toronto",
+  "country": "Canada",
+  "rating": 3,
+  "check_in_time": "13:00:00",
+  "check_out_time": "11:00:00"
+}
+
+###
+
+### Create Sahara Dunes Resort
+POST http://127.0.0.1:8080/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Sahara Dunes Resort",
+  "description": "Luxury desert camp with camel excursions.",
+  "address": "99 Oasis Trail",
+  "city": "Marrakech",
+  "country": "Morocco",
+  "rating": 5,
+  "check_in_time": "15:00:00",
+  "check_out_time": "12:00:00"
+}

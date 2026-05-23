@@ -1,0 +1,52 @@
+### Get all hotels
+GET http://127.0.0.1:8080/api/hotels
+
+###
+
+### Get hotel by single name
+GET http://127.0.0.1:8080/api/hotels?names=Grand%20Oslo%20Hotel
+
+###
+
+### Get hotels by multiple names
+GET http://127.0.0.1:8080/api/hotels?names=Grand%20Oslo%20Hotel,Tokyo%20Business%20Inn
+
+###
+
+### Get hotels with minimum rating
+GET http://127.0.0.1:8080/api/hotels?from_rating=3
+
+###
+
+### Get hotels with maximum rating
+GET http://127.0.0.1:8080/api/hotels?to_rating=4
+
+###
+
+### Get hotels within rating range
+GET http://127.0.0.1:8080/api/hotels?from_rating=3&to_rating=5
+
+###
+
+### Get hotels by names and rating range
+GET http://127.0.0.1:8080/api/hotels?names=Grand%20Oslo%20Hotel,Desert%20Oasis%20Hotel&from_rating=4&to_rating=5
+
+###
+
+### Get only 5-star hotels
+GET http://127.0.0.1:8080/api/hotels?from_rating=5&to_rating=5
+
+###
+
+### Get 3 to 4 star hotels
+GET http://127.0.0.1:8080/api/hotels?from_rating=3&to_rating=4
+
+###
+
+### Get hotels by three names
+GET http://127.0.0.1:8080/api/hotels?names=Grand%20Oslo%20Hotel,Tokyo%20Business%20Inn,Mountain%20View%20Lodge
+
+###
+
+### Get hotels by names only
+GET http://127.0.0.1:8080/api/hotels?names=Sunset%20Beach%20Resort,Desert%20Oasis%20Hotel
