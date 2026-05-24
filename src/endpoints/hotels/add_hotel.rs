@@ -4,7 +4,7 @@ use crate::domain::hotel::Hotel;
 use crate::persistence::repositories::hotel_repository::HotelRepository;
 
 
-#[derive(Deserialize)]
+#[derive(Deserialize, utoipa::ToSchema)]
 pub struct AddHotelRequest
 {
     pub name: String,
@@ -17,10 +17,30 @@ pub struct AddHotelRequest
     pub check_out_time: String
 }
 
+#[utoipa::path(
+    post,
+    path = "/api/hotels",
+    request_body = AddHotelRequest,
+    responses(
+        (
+            status = CREATED,
+            description = "Hotel successfully created"
+        ),
+        (
+            status = OK,
+            description = "Idempotent successfully"
+        ),
+        (
+            status = BAD_REQUEST,
+            description = "Invalid hotel payload supplied"
+        )
+    ),
+    tag = "Hotels"
+)]
 #[post("api/hotels")]
-pub async fn endpoint(repo: web::Data<HotelRepository>, payload: web::Json<AddHotelRequest>) -> impl Responder {
-
-    let domain_result = Hotel::new(
+pub async fn add_hotel(repo: web::Data<HotelRepository>, payload: web::Json<AddHotelRequest>) -> impl Responder
+{
+    let hotel = match Hotel::new(
         &payload.name,
         &payload.description,
         &payload.address,
@@ -28,25 +48,21 @@ pub async fn endpoint(repo: web::Data<HotelRepository>, payload: web::Json<AddHo
         &payload.country,
         payload.rating,
         &payload.check_in_time,
-        &payload.check_out_time,
-    ).map_err(|e| { HttpResponse::BadRequest().body(e.0) });
-
-    if domain_result.is_err() { return domain_result.err().unwrap(); }
-    let hotel = domain_result.unwrap();
-    
-    let exists_result = repo.hotel_exists(&hotel.name).await
-        .map_err(|e| { HttpResponse::BadRequest().body(e.to_string()) });
-    
-    match exists_result {
-        Ok(true) => return HttpResponse::Ok().finish(),
-        Ok(false) => (),
-        Err(e) => return e
+        &payload.check_out_time)
+    {
+        Ok(hotel) => hotel,
+        Err(e) => return HttpResponse::BadRequest().body(e.0)
     };
     
-    let result = repo.add_hotel(hotel)
-        .await.map_err( |e| HttpResponse::InternalServerError().body(e.to_string()));
-    
-    if result.is_err() { return result.err().unwrap(); }
+    match repo.hotel_exists(&hotel.name).await
+    {
+        Ok(true) => return HttpResponse::Ok().finish(),
+        Ok(false) => (),
+        Err(e) => return  HttpResponse::BadRequest().body(e.to_string())
+    };
 
-    HttpResponse::Created().into()
+    match repo.add_hotel(hotel).await {
+        Ok(_) => HttpResponse::Created().into(),
+        Err(e) => HttpResponse::InternalServerError().body(e.to_string())
+    }
 }
