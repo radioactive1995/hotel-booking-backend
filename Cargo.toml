@@ -16,3 +16,6 @@ utoipa = { version = "5.5.0", features = ["actix_extras", "time"] }
 utoipa-swagger-ui = { version = "9.0.2", features = ["actix-web"] }
 rust_decimal = { version = "1.42.0", features = ["serde", "serde-with-arbitrary-precision"] }
 rust_decimal_macros = "1.40.0"
+oauth2 = "5.0.0"
+actix-session = { version = "0.11.0", features = ["cookie-session"] }
+reqwest = "0.12.28"
