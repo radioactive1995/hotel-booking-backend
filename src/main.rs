@@ -10,6 +10,7 @@ use utoipa_swagger_ui::SwaggerUi;
 use endpoints::hotels::add_hotel::AddHotelRequest;
 use endpoints::hotels::get_hotels::GetHotelsRequest;
 use endpoints::hotels::get_hotels::HotelDto;
+use endpoints::room_types::add_room_type::AddRoomTypeRequest;
 
 pub mod endpoints;
 pub mod providers;
@@ -23,12 +24,14 @@ pub mod domain;
     components(
         schemas(
             AddHotelRequest,
+            AddRoomTypeRequest,
             GetHotelsRequest,
             HotelDto
         )
     ),
     tags(
-        (name = "Hotels", description = "Hotel management endpoints.")
+        (name = "Hotels", description = "Hotel management endpoints."),
+        (name = "Room Types", description = "Room type management endpoints.")
     ),
     info(
         title = "Hotel Booking API",
