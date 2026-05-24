@@ -1,0 +1,335 @@
+### Add Spa Suite to Baltic Sea Resort
+POST http://127.0.0.1:8080/api/hotels/8/room-type
+Content-Type: application/json
+
+{
+  "name": "Spa Suite",
+  "description": "Modern suite with direct access to wellness facilities.",
+  "capacity": 2,
+  "base_price": 249.50,
+  "total_rooms": 2
+}
+
+###
+
+### Add Mountain View Cabin to Alpine Crown Lodge
+POST http://127.0.0.1:8080/api/hotels/9/room-type
+Content-Type: application/json
+
+{
+  "name": "Mountain View Cabin",
+  "description": "Cozy alpine cabin overlooking ski slopes.",
+  "capacity": 5,
+  "base_price": 319.00,
+  "total_rooms": 3
+}
+
+###
+
+### Add Ocean View Villa to Emerald Bay Resort
+POST http://127.0.0.1:8080/api/hotels/10/room-type
+Content-Type: application/json
+
+{
+  "name": "Ocean View Villa",
+  "description": "Private beachfront villa with infinity pool.",
+  "capacity": 4,
+  "base_price": 599.00,
+  "total_rooms": 1
+}
+
+###
+
+### Add Standard Single Room to City Central Inn
+POST http://127.0.0.1:8080/api/hotels/11/room-type
+Content-Type: application/json
+
+{
+  "name": "Standard Single Room",
+  "description": "Affordable room designed for solo travelers.",
+  "capacity": 1,
+  "base_price": 79.99,
+  "total_rooms": 3
+}
+
+###
+
+### Add Royal Penthouse to Golden Palace Hotel
+POST http://127.0.0.1:8080/api/hotels/12/room-type
+Content-Type: application/json
+
+{
+  "name": "Royal Penthouse",
+  "description": "Top-floor penthouse with private terrace and jacuzzi.",
+  "capacity": 6,
+  "base_price": 1299.00,
+  "total_rooms": 1
+}
+
+###
+
+### Add Tatami Suite to Sakura Stay
+POST http://127.0.0.1:8080/api/hotels/13/room-type
+Content-Type: application/json
+
+{
+  "name": "Tatami Suite",
+  "description": "Traditional Japanese suite with tatami flooring.",
+  "capacity": 3,
+  "base_price": 260.75,
+  "total_rooms": 2
+}
+
+###
+
+### Add Family Suite to Mediterranean Pearl Resort
+POST http://127.0.0.1:8080/api/hotels/14/room-type
+Content-Type: application/json
+
+{
+  "name": "Family Suite",
+  "description": "Large family suite with sea-facing terrace.",
+  "capacity": 5,
+  "base_price": 429.95,
+  "total_rooms": 2
+}
+
+###
+
+### Add Executive Suite to Skyline Business Hotel
+POST http://127.0.0.1:8080/api/hotels/15/room-type
+Content-Type: application/json
+
+{
+  "name": "Executive Suite",
+  "description": "Luxury business suite with workspace and skyline panorama.",
+  "capacity": 3,
+  "base_price": 349.50,
+  "total_rooms": 2
+}
+
+###
+
+### Add Budget Twin Room to Canyon Ridge Motel
+POST http://127.0.0.1:8080/api/hotels/16/room-type
+Content-Type: application/json
+
+{
+  "name": "Budget Twin Room",
+  "description": "Simple twin room for travelers on a budget.",
+  "capacity": 2,
+  "base_price": 59.99,
+  "total_rooms": 3
+}
+
+###
+
+### Add Beachfront Suite to Ocean Breeze Suites
+POST http://127.0.0.1:8080/api/hotels/17/room-type
+Content-Type: application/json
+
+{
+  "name": "Beachfront Suite",
+  "description": "Modern suite with direct beach access and balcony.",
+  "capacity": 4,
+  "base_price": 399.00,
+  "total_rooms": 2
+}
+
+###
+
+### Add Castle Chamber to Heritage Castle Hotel
+POST http://127.0.0.1:8080/api/hotels/18/room-type
+Content-Type: application/json
+
+{
+  "name": "Castle Chamber",
+  "description": "Historic medieval-style chamber with antique decor.",
+  "capacity": 2,
+  "base_price": 499.90,
+  "total_rooms": 1
+}
+
+###
+
+### Add Eco Bungalow to Rainforest Eco Lodge
+POST http://127.0.0.1:8080/api/hotels/19/room-type
+Content-Type: application/json
+
+{
+  "name": "Eco Bungalow",
+  "description": "Sustainable jungle bungalow surrounded by rainforest.",
+  "capacity": 3,
+  "base_price": 189.50,
+  "total_rooms": 3
+}
+
+###
+
+### Add Lake View Suite to Crystal Lake Hotel
+POST http://127.0.0.1:8080/api/hotels/20/room-type
+Content-Type: application/json
+
+{
+  "name": "Lake View Suite",
+  "description": "Elegant suite with crystal lake panorama.",
+  "capacity": 3,
+  "base_price": 299.99,
+  "total_rooms": 2
+}
+
+###
+
+### Add Glass Igloo to Aurora Sky Resort
+POST http://127.0.0.1:8080/api/hotels/21/room-type
+Content-Type: application/json
+
+{
+  "name": "Glass Igloo",
+  "description": "Panoramic glass igloo for northern lights viewing.",
+  "capacity": 2,
+  "base_price": 720.00,
+  "total_rooms": 1
+}
+
+###
+
+### Add Canal Deluxe Room to Venice Canal Hotel
+POST http://127.0.0.1:8080/api/hotels/22/room-type
+Content-Type: application/json
+
+{
+  "name": "Canal Deluxe Room",
+  "description": "Romantic room overlooking Venice canals.",
+  "capacity": 2,
+  "base_price": 310.00,
+  "total_rooms": 3
+}
+
+###
+
+### Add Maple Comfort Room to Maple Leaf Inn
+POST http://127.0.0.1:8080/api/hotels/23/room-type
+Content-Type: application/json
+
+{
+  "name": "Maple Comfort Room",
+  "description": "Warm and cozy room with rustic Canadian decor.",
+  "capacity": 2,
+  "base_price": 145.25,
+  "total_rooms": 3
+}
+
+###
+
+### Add Desert Luxury Tent to Sahara Dunes Resort
+POST http://127.0.0.1:8080/api/hotels/24/room-type
+Content-Type: application/json
+
+{
+  "name": "Desert Luxury Tent",
+  "description": "Premium desert tent with private oasis seating.",
+  "capacity": 4,
+  "base_price": 530.00,
+  "total_rooms": 2
+}
+
+###
+
+### Add Deluxe Double Room to Royal Garden Hotel
+POST http://127.0.0.1:8080/api/hotels/25/room-type
+Content-Type: application/json
+
+{
+  "name": "Deluxe Double Room",
+  "description": "Elegant double room with king-size bed and garden view.",
+  "capacity": 2,
+  "base_price": 189.99,
+  "total_rooms": 3
+}
+
+###
+
+### Add Oslo City Room to Grand Oslo Hotel
+POST http://127.0.0.1:8080/api/hotels/2/room-type
+Content-Type: application/json
+
+{
+  "name": "Oslo City Room",
+  "description": "Comfortable room near central Oslo attractions.",
+  "capacity": 2,
+  "base_price": 175.00,
+  "total_rooms": 2
+}
+
+###
+
+### Add Sunset Beach Suite to Sunset Beach Resort
+POST http://127.0.0.1:8080/api/hotels/3/room-type
+Content-Type: application/json
+
+{
+  "name": "Sunset Beach Suite",
+  "description": "Bright suite with balcony and sunset ocean views.",
+  "capacity": 4,
+  "base_price": 389.99,
+  "total_rooms": 2
+}
+
+###
+
+### Add Mountain Lodge Family Room to Mountain View Lodge
+POST http://127.0.0.1:8080/api/hotels/4/room-type
+Content-Type: application/json
+
+{
+  "name": "Mountain Lodge Family Room",
+  "description": "Family room with warm lodge decor and mountain scenery.",
+  "capacity": 5,
+  "base_price": 289.00,
+  "total_rooms": 3
+}
+
+###
+
+### Add Tokyo Business Single to Tokyo Business Inn
+POST http://127.0.0.1:8080/api/hotels/5/room-type
+Content-Type: application/json
+
+{
+  "name": "Tokyo Business Single",
+  "description": "Compact business room with desk and fast Wi-Fi.",
+  "capacity": 1,
+  "base_price": 119.50,
+  "total_rooms": 3
+}
+
+###
+
+### Add Desert Oasis Suite to Desert Oasis Hotel
+POST http://127.0.0.1:8080/api/hotels/6/room-type
+Content-Type: application/json
+
+{
+  "name": "Desert Oasis Suite",
+  "description": "Spacious desert-themed suite with premium amenities.",
+  "capacity": 3,
+  "base_price": 255.00,
+  "total_rooms": 2
+}
+
+###
+
+### Add Northern Lights Cabin to Northern Lights Resort
+POST http://127.0.0.1:8080/api/hotels/7/room-type
+Content-Type: application/json
+
+{
+  "name": "Northern Lights Cabin",
+  "description": "Private cabin designed for aurora viewing.",
+  "capacity": 2,
+  "base_price": 410.00,
+  "total_rooms": 1
+}
+
+###

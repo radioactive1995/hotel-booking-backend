@@ -37,13 +37,25 @@ impl HotelRepository {
         Ok(())
     }
 
-    pub async fn hotel_exists(&self, name: &str) -> Result<bool, sqlx::Error>
+    pub async fn hotel_exists_by_name(&self, name: &str) -> Result<bool, sqlx::Error>
     {
         let record = sqlx::query!(
             r#"
             SELECT EXISTS(SELECT 1 FROM hotels WHERE name = $1) AS "exists!"
             "#,
             name)
+            .fetch_one(&self.pg_pool).await?;
+
+        Ok(record.exists)
+    }
+
+    pub async fn hotel_exists_by_id(&self, id: i32) -> Result<bool, sqlx::Error>
+    {
+        let record = sqlx::query!(
+            r#"
+            SELECT EXISTS(SELECT 1 FROM hotels WHERE id = $1) AS "exists!"
+            "#,
+            id)
             .fetch_one(&self.pg_pool).await?;
 
         Ok(record.exists)

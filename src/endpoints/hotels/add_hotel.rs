@@ -54,7 +54,7 @@ pub async fn add_hotel(repo: web::Data<HotelRepository>, payload: web::Json<AddH
         Err(e) => return HttpResponse::BadRequest().body(e.0)
     };
     
-    match repo.hotel_exists(&hotel.name).await
+    match repo.hotel_exists_by_name(&hotel.name).await
     {
         Ok(true) => return HttpResponse::Ok().finish(),
         Ok(false) => (),

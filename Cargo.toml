@@ -7,10 +7,12 @@ edition = "2024"
 actix-web = "4.13.0"
 chrono = "0.4.44"
 config = "0.15.23"
-sqlx = { version = "0.8.6", features = ["runtime-tokio-rustls", "postgres", "time"] }
+sqlx = { version = "0.8.6", features = ["runtime-tokio-rustls", "postgres", "time", "rust_decimal"] }
 time = { version = "0.3.47", features = ["serde"] }
 serde = { version = "1.0.228", features = ["derive"] }
 serde_with = "3.20.0"
 utoipa-actix-web = "0.1.2"
 utoipa = { version = "5.5.0", features = ["actix_extras", "time"] }
 utoipa-swagger-ui = { version = "9.0.2", features = ["actix-web"] }
+rust_decimal = { version = "1.42.0", features = ["serde", "serde-with-arbitrary-precision"] }
+rust_decimal_macros = "1.40.0"

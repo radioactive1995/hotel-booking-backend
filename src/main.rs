@@ -1,3 +1,5 @@
+extern crate core;
+
 use actix_web::{App, HttpServer};
 use actix_web::web::Data;
 use utoipa_actix_web::AppExt;
@@ -46,8 +48,10 @@ async fn main() -> std::io::Result<()> {
             .into_utoipa_app()
             .openapi(ApiDoc::openapi())
             .app_data(Data::new(persistence::repositories::hotel_repository::HotelRepository::new(pg_pool.clone())))
+            .app_data(Data::new(persistence::repositories::room_type_repository::RoomTypeRepository::new(pg_pool.clone())))
             .service(endpoints::hotels::get_hotels::get_hotels)
             .service(endpoints::hotels::add_hotel::add_hotel)
+            .service(endpoints::room_types::add_room_type::add_room_type)
             .openapi_service(|api| SwaggerUi::new("/swagger/{_:.*}").url("/api-docs/openapi.json", api))
             .into_app()
     })
